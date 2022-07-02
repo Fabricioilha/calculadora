@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title> 
+        Remove the first character 
+    </title> 
+</head> 
+  
+<body> 
+  
+    <h2> 
+        Click on button to display the 
+        `DelftStack` without first character.
+    </h2> 
+      
+    <button onclick="removeFirstChar()"> 
+        Click Button
+    </button> 
+      
+    <p id="displayString">DelftStack</p> 
+  
+    <script>         
+        const removeFirstChar = () => {
+            let str1 = document.getElementById("displayString").innerHTML;  
+            let str2 = str1.replace(/^./, ""); 
+            document.getElementById("displayString").innerHTML = str2;
+            console.log(str2);     
+        }
+    </script> 
+</body> 
+  
+</html>
